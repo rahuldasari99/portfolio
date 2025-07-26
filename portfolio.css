@@ -18,6 +18,7 @@
     color: white;
     position: sticky;
     top: 0;
+
 }
 .nav a{
     color: white;
@@ -38,6 +39,14 @@
     position: relative;
     width: max-content;
    
+    
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: white;
+    font-size: 1.1rem;
     
 }
 .nav li::after{
@@ -272,23 +281,37 @@ a:hover{
     color: white;
     position: sticky;
     top: 0;
-    flex-direction: column;
+   
 }
 .nav a{
     color: white;
 }
 .nav h1{
     letter-spacing: 5px;
-}
-.nav ul{
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 20px;
-    display: none;
 
 }
+.nav ul{
+    position: absolute;
+    top:50px ;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    gap: 0;
+    overflow: hidden;
+
+}
+#menuList{
+    transition: all 1s linear;
+}
+.nav ul li{
+    padding: 20px;
+}
+.menu-icon{
+    display: block;
+}
+
 .home{
     /* border: 2px solid black; */
     height:500px;
