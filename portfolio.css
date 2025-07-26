@@ -1,0 +1,482 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Futura Std', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.nav{
+    border: 1px solid black;
+    height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.nav a{
+    color: white;
+}
+.nav h1{
+    letter-spacing: 5px;
+}
+.nav ul{
+    display: flex;
+    gap: 30px;
+
+}
+.nav li{
+   
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+    width: max-content;
+   
+    
+}
+.nav li::after{
+    content: '';
+    background: orangered;
+    border-radius: 100px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    
+    transition: all 2s ease;
+    width: 0;
+}
+.nav li:hover::after{
+    width: 100%;
+    
+}
+
+a:hover{
+    color: orangered;
+}
+/* main section */
+.main{
+   
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+}
+/* home section */
+.home{
+    /* border: 2px solid black; */
+    height:500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: orangered;
+    
+
+
+    
+
+}
+.home-content{
+    
+    
+
+    
+}
+
+.home h1 {
+    font-size: 8rem;
+    margin-left: 500px;
+   
+}
+.home h2 {
+    font-size: 2rem;
+    margin-left: 600px;
+} 
+.home h3{
+    font-size:1.5rem;
+    margin-left: 720px;
+    letter-spacing: 1px;
+}
+/* about section */
+.about{
+    /* border: 2px solid black; */
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+
+}
+.about-content{
+    
+    /* border: 3px solid white; */
+    height: 500px;
+    
+    padding: 30px 40px ;
+    font-size: 1.2rem;
+    line-height: 2;
+    flex: 1;
+    
+    
+}
+.about-img{
+    /* border: 3px solid white; */
+    height:500px;
+   
+    padding: 50px;
+   
+
+    flex: 1;
+
+}
+.aboutimg{
+    height:100%;
+    width: 100%;
+     border-radius: 20px;
+
+}
+.about p{
+    color: white;
+}
+/* education section */
+.education{
+    border: 1px solid black;
+     height: 500px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 200px;
+}
+.education-cards{
+    /* border: 2px solid black; */
+    height:400px;
+    width:300px;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px orangered;
+    transition: all 1s ease-in-out;
+    
+}
+.education-content{
+    padding: 20px;
+
+}
+.education-cards img{
+  
+   
+    width:100%;
+
+}
+.education-cards p{
+        margin-top: 20px;
+    font-size: 1.2rem;
+   
+    
+
+}
+.education-cards h2{
+        margin-top: 20px;
+    font-size: 1.5rem;
+   
+    
+
+}
+.education-cards h1{
+    margin-top: 20px;
+        margin-top: 20px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+   
+    
+
+}
+.education-cards:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+.certifications{
+    border: 2px solid black;
+    height:1000px;
+    background-color: black;
+    color: white;
+    
+
+}
+.certifications h2{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+     padding: 20px;
+     
+}
+.certification-cards{
+   display: flex;
+   padding: 30px 40px ;
+   flex-wrap: wrap;
+  
+   justify-content: space-around;
+  gap: 40PX;
+   
+    
+    
+}
+.card1{
+    /* border: 2px solid white; */
+    height: 300px;
+    width:500px;
+   border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px orangered;
+
+}
+.card2{
+    /* border: 2px solid white; */
+    height: 500px;
+    width:500px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px orangered;
+   
+}
+.card1 img{
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+    
+
+}
+.card2 img{
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+    
+    
+
+}
+@media  (max-width:500px){
+
+    .nav{
+    border: 1px solid black;
+    height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+}
+.nav a{
+    color: white;
+}
+.nav h1{
+    letter-spacing: 5px;
+}
+.nav ul{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+
+}
+.home{
+    /* border: 2px solid black; */
+    height:500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: orangered;
+    
+
+
+    
+
+}
+
+.home h1 {
+    font-size: 8rem;
+    margin-left: 80px;
+   
+}
+.home h2 {
+    font-size: 2rem;
+    margin-left: 90px;
+} 
+.home h3{
+    font-size:1.5rem;
+    margin-left: 100px;
+    letter-spacing: 1px;
+}
+
+
+.about{
+    /* border: 2px solid black; */
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+.about-content{
+    
+    /* border: 3px solid white; */
+    height: 500px;
+    
+    padding: 20px 40px ;
+    font-size: 1rem;
+    line-height: 1.6;
+    
+    
+    
+}
+.about-img{
+    /* border: 3px solid white; */
+    height:500px;
+   
+    padding:0px 50px;
+   
+   
+
+    
+
+}
+.aboutimg{
+    height:100%;
+    width: 100%;
+     border-radius: 20px;
+
+}
+.about p{
+    color: white;
+}
+.education{
+    border: 1px solid black;
+     height: 600px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.education-cards{
+    /* border: 2px solid black; */
+    height:250px;
+    width:300px;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px orangered;
+    transition: all 1s ease-in-out;
+    
+}
+.education-content{
+    padding: 20px;
+
+}
+.education-cards img{
+  
+   
+    width:100%;
+    height:60px
+
+}
+.education-cards p{
+        margin-top: 20px;
+    font-size: 1rem;
+   
+    
+
+}
+.education-cards h2{
+        margin-top: 20px;
+    font-size: 1.2rem;
+   
+    
+
+}
+.education-cards h1{
+    margin-top: 20px;
+        margin-top: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+   
+    
+
+}
+.education-cards:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+.certifications{
+    border: 2px solid black;
+    height:2000px;
+    background-color: black;
+    color: white;
+    
+
+}
+.certifications h2{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+     padding: 20px;
+     
+}
+.certification-cards{
+   display: flex;
+   padding: 30px 30px ;
+   flex-wrap: wrap;
+  
+  
+   align-items: center;
+   flex-direction: column;
+  gap: 40PX;
+   
+    
+    
+}
+.card1{
+    /* border: 2px solid white; */
+    height: 200px;
+    width:300px;
+   border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px orangered;
+
+}
+.card2{
+    /* border: 2px solid white; */
+    height: 500px;
+    width:300px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px orangered;
+   
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+
+}
+.card2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+    
+
+}
+}
