@@ -18,7 +18,7 @@
     color: white;
     position: sticky;
     top: 0;
-  
+
 }
 .nav a{
     color: white;
@@ -32,14 +32,14 @@
 
 }
 .nav li{
-   
+
     text-transform: capitalize;
     font-size: 1.1rem;
     font-weight: 500;
     position: relative;
     width: max-content;
-   
-    
+
+
 }
 .menu-icon{
     display: none;
@@ -47,7 +47,7 @@
 .menu-icon i{
     color: white;
     font-size: 1.5rem;
-    
+
 }
 .nav li::after{
     content: '';
@@ -59,13 +59,13 @@
 
     bottom: 0;
     left: 0;
-    
+
     transition: all 2s ease;
     width: 0;
 }
 .nav li:hover::after{
     width: 100%;
-    
+
 }
 
 a:hover{
@@ -73,7 +73,7 @@ a:hover{
 }
 /* main section */
 .main{
-   
+
     border: 2px solid black;
     height: 100%;
     width: 100%;
@@ -87,28 +87,28 @@ a:hover{
     flex-direction: column;
     justify-content:center;
     background-color: orangered;
-    
 
 
-    
+
+
 
 }
 .home-content{
-    
-    
 
-    
+
+
+
 }
 
 .home h1 {
     font-size: 8rem;
     margin-left: 500px;
-   
+
 }
 .home h2 {
     font-size: 2rem;
     margin-left: 600px;
-} 
+}
 .home h3{
     font-size:1.5rem;
     margin-left: 720px;
@@ -124,23 +124,23 @@ a:hover{
 
 }
 .about-content{
-    
+
     /* border: 3px solid white; */
     height: 500px;
-    
+
     padding: 30px 40px ;
     font-size: 1.2rem;
     line-height: 2;
     flex: 1;
-    
-    
+
+
 }
 .about-img{
     /* border: 3px solid white; */
     height:500px;
-   
+
     padding: 50px;
-   
+
 
     flex: 1;
 
@@ -173,30 +173,30 @@ a:hover{
     border-radius: 20px;
     box-shadow: 1px 1px 20px 5px orangered;
     transition: all 1s ease-in-out;
-    
+
 }
 .education-content{
     padding: 20px;
 
 }
 .education-cards img{
-  
-   
+
+
     width:100%;
 
 }
 .education-cards p{
         margin-top: 20px;
     font-size: 1.2rem;
-   
-    
+
+
 
 }
 .education-cards h2{
         margin-top: 20px;
     font-size: 1.5rem;
-   
-    
+
+
 
 }
 .education-cards h1{
@@ -204,8 +204,8 @@ a:hover{
         margin-top: 20px;
     font-size: 2rem;
     letter-spacing: 2px;
-   
-    
+
+
 
 }
 .education-cards:hover{
@@ -216,7 +216,7 @@ a:hover{
     height:1000px;
     background-color: black;
     color: white;
-    
+
 
 }
 .certifications h2{
@@ -224,18 +224,18 @@ a:hover{
     text-transform: capitalize;
     letter-spacing: 3px;
      padding: 20px;
-     
+
 }
 .certification-cards{
    display: flex;
    padding: 30px 40px ;
    flex-wrap: wrap;
-  
+
    justify-content: space-around;
   gap: 40PX;
-   
-    
-    
+
+
+
 }
 .card1{
     /* border: 2px solid white; */
@@ -251,21 +251,21 @@ a:hover{
     width:500px;
     border-radius: 20px;
     box-shadow: 1px 1px 20px 5px orangered;
-   
+
 }
 .card1 img{
     width: 500px;
     height: 100%;
     border-radius: 20px;
-    
+
 
 }
 .card2 img{
     width: 500px;
     height: 100%;
     border-radius: 20px;
-    
-    
+
+
 
 }
 @media  (max-width:920px){
@@ -281,7 +281,8 @@ a:hover{
     color: white;
     position: sticky;
     top: 0;
-   
+    z-index: 1;
+
 }
 .nav a{
     color: white;
@@ -309,7 +310,7 @@ a:hover{
     padding: 20px;
 }
 .menu-icon{
-    
+
     display: block;
 }
 
@@ -321,22 +322,22 @@ a:hover{
     flex-direction: column;
     justify-content:center;
     background-color: orangered;
-    
 
 
-    
+
+
 
 }
 
 .home h1 {
     font-size: 8rem;
     margin-left: 80px;
-   
+
 }
 .home h2 {
     font-size: 2rem;
     margin-left: 90px;
-} 
+}
 .home h3{
     font-size:1.5rem;
     margin-left: 100px;
@@ -345,44 +346,44 @@ a:hover{
 
 
 .about{
-    /* border: 2px solid black; */
+    /* border: 2px solid rgb(255, 255, 255); */
     height: 700px;
     width: 100%;
     background-color: black;
     display: flex;
     flex-direction: column;
 
+
 }
 .about-content{
-    
+
     /* border: 3px solid white; */
     height: 500px;
-    
-    padding: 20px 40px ;
+
+    padding: 0px 40px ;
+    padding-top: 20px;
+    padding-bottom: 0px;
     font-size: 1rem;
     line-height: 1.6;
-    
-    
-    
+
+
+
 }
 .about-img{
     /* border: 3px solid white; */
     height:200px;
-   
-    padding:10px 20px;
-   
-   
-   
 
-    
+    padding:0px 20px;
+    padding-bottom: 10px;
 
-}
-.aboutimg{
-    height:100%;
-    width: 100%;
-     border-radius: 20px;
+
+
+
+
+
 
 }
+
 .about p{
     color: white;
 }
@@ -406,15 +407,15 @@ a:hover{
     border-radius: 20px;
     box-shadow: 1px 1px 20px 5px orangered;
     transition: all 1s ease-in-out;
-    
+
 }
 .education-content{
     padding: 20px;
 
 }
 .education-cards img{
-  
-   
+
+
     width:100%;
     height:60px
 
@@ -422,15 +423,15 @@ a:hover{
 .education-cards p{
         margin-top: 20px;
     font-size: 1rem;
-   
-    
+
+
 
 }
 .education-cards h2{
         margin-top: 20px;
     font-size: 1.2rem;
-   
-    
+
+
 
 }
 .education-cards h1{
@@ -438,8 +439,8 @@ a:hover{
         margin-top: 20px;
     font-size: 1.5rem;
     letter-spacing: 2px;
-   
-    
+
+
 
 }
 .education-cards:hover{
@@ -450,7 +451,7 @@ a:hover{
     height:2000px;
     background-color: black;
     color: white;
-    
+
 
 }
 .certifications h2{
@@ -458,20 +459,20 @@ a:hover{
     text-transform: capitalize;
     letter-spacing: 3px;
      padding: 20px;
-     
+
 }
 .certification-cards{
    display: flex;
    padding: 30px 30px ;
    flex-wrap: wrap;
-  
-  
+
+
    align-items: center;
    flex-direction: column;
   gap: 40PX;
-   
-    
-    
+
+
+
 }
 .card1{
     /* border: 2px solid white; */
@@ -487,21 +488,21 @@ a:hover{
     width:300px;
     border-radius: 20px;
     box-shadow: 1px 1px 20px 5px orangered;
-   
+
 }
 .card1 img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    
+
 
 }
 .card2 img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    
-    
+
+
 
 }
 }
