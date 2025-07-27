@@ -303,6 +303,9 @@ a:hover{
     overflow: hidden;
 
 }
+.nav li{
+    width: max-content;
+}
 #menuList{
     transition: all .2s linear;
 }
@@ -321,6 +324,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
     background-color: orangered;
 
 
@@ -331,7 +335,7 @@ a:hover{
 
 .home h1 {
     font-size: 8rem;
-    margin-left: 80px;
+    margin-left: 70px;
 
 }
 .home h2 {
@@ -340,7 +344,7 @@ a:hover{
 }
 .home h3{
     font-size:1.5rem;
-    margin-left: 100px;
+    margin-left: 90px;
     letter-spacing: 1px;
 }
 
